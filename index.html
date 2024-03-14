@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>No.1 İş Dünyası</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">No.1 Technology</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Yapılması maalesef henüz bitmedi...</h4>
+      <h5>Bu sadece taslak <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Ama yapmaya devam ediyoruz ve en kısa sürede bitecek.</p>
+      <p>Takipte kalmaya devam edin</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>No.1 Teknoloji </p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
+
+<div class="w3-row"><br>
+
+  <div class="w3-quarter">
+  <img src="images/aysima.jpg" alt="Aysima Hanım" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Aysima Kılınç</h3>
+  <p>Müdür</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/melisa.jpg" alt="Melisa Hanım" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Melisa Ernur Yıldırım</h3>
+  <p>Yönetici Asistanı</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/irem.jpg" alt="İrem Hanım" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>İrem Kurt</h3>
+  <p>Sosyal Medya Uzmanı</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/ulas.jpg" alt="Ulas Bey" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Muhammet Ulaş Çiçek</h3>
+  <p>Yazılım Geliştirme Uzmanı</p>
+</div>
+
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Work</h2>
+<p>No.1 İş Dünyası, sosyal medya hizmetleri ve yazılım çözümleri sunan bir öncü firma olarak öne çıkıyor. İnovasyona odaklı yaklaşımı sayesinde, markaların çevrimiçi etkileşimini artırarak benzersiz dijital stratejiler geliştiriyoruz. Ayrıca, No.1 olarak yazılım alanında liderliğe odaklanarak, iş süreçlerinizi optimize etmek ve özel projeler geliştirmek için güçlü bir yazılım altyapısı sunuyoruz. Müşteri memnuniyetini ön planda tutan No.1, teknoloji ve yaratıcılığı birleştirerek iş ortaklığını bir adım öteye taşıyor. No.1 ile işinizi dijital dünyada zirveye taşımanın avantajlarını keşfedin!</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>İrem Hanım</h3>
+  <h4>Müşteri</h4>
+  <p>Bu hizmeti kullanmaya başladıktan sonra hesabımın etkileşimi bir anda arttı. Gerçek ve aktif takipçilerle tanıştım. Hızlı teslimatları ve sürekli destekleri sayesinde herhangi bir sorun yaşamadım. Harika bir deneyim!</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Levent Bey</h3>
+  <h4>Müşteri</h4>
+  <p>Sosyal medya hizmetleri konusunda uzun bir araştırma yaptıktan sonra bu platformu keşfettim ve sonuçlardan çok etkilendim! Profesyonel ve hızlı bir şekilde takipçi sayımı artırdılar. İletişimleri de son derece kibar ve yardımsever. Kesinlikle tavsiye ederim</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Ömer Bey</h3>
+  <h4>Müşteri</h4>
+  <p>Sosyal medya hizmetleri konusunda pek çok deneyimim oldu, ancak bu platform beni gerçekten şaşırttı. Sadece takipçi değil, aynı zamanda etkileşim oranım da ciddi şekilde yükseldi. Güvenilir ve kaliteli bir hizmet, tekrar teşekkür ederim!</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>PRICING</h2>
+    <p>Choose a pricing plan that fits your needs.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Ekonomik Paket</p>
+        </li>
+        <li class="w3-padding-16"><b>İÇERİK TASARIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>İNSTAGRAM, TWİTTER, FACEBOOK ÇAPRAZ PAYLAŞIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>ÖZEL GÜN PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>AYLIK RAPORLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>HESAP ANALİZİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KRİZ YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>REKLAM YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÜNLÜK 3 POST VE 1 STORY PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>LOGO TASARIM ❌</b></li>
+        <li class="w3-padding-16"><b>TELEFON VE E-POSTA DESTEĞİ ❌</b></li>
+        <li class="w3-padding-16"><b>KREATİF KAMPANYA ÜRETİMİ VE YÖNETİMİ ❌</li>
+        <li class="w3-padding-16"><b>SEO ❌</b></li>
+        <li class="w3-padding-16"><b>İTİBAR YÖNETİMİ ❌</b></li>
+        <li class="w3-padding-16"><b>RAKİP ANALİZİ ❌</b></li>
+        <li class="w3-padding-16"><b>WEB TASARIM ❌ </b></li>
+        <li class="w3-padding-16"><b>MÜŞTERİ İLE ETKİLEŞİM ❌ </b></li>
+        <li class="w3-padding-16"><b>KURUMSAL KİMLİK ❌</b></li>
+        <li class="w3-padding-16"><b>HEDEF KİTLE İLE ETKİLEŞİM ❌ </b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA ❌ </b></li>
+        <li class="w3-padding-16"><b>SEM ❌</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 300</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>Satın Al</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Standart Paket</p>
+        </li>
+        <li class="w3-padding-16"><b>İÇERİK TASARIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>İNSTAGRAM, TWİTTER, FACEBOOK ÇAPRAZ PAYLAŞIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>ÖZEL GÜN PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>AYLIK RAPORLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>HESAP ANALİZİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KRİZ YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>REKLAM YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÜNLÜK 1 POST VE 3 STORY PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>LOGO TASARIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>TELEFON VE E-POSTA DESTEĞİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KREATİF KAMPANYA ÜRETİMİ VE YÖNETİMİ &#x2705;</li>
+        <li class="w3-padding-16"><b>SEO ❌</b></li>
+        <li class="w3-padding-16"><b>İTİBAR YÖNETİMİ ❌</b></li>
+        <li class="w3-padding-16"><b>RAKİP ANALİZİ ❌</b></li>
+        <li class="w3-padding-16"><b>WEB TASARIM ❌</b></li>
+        <li class="w3-padding-16"><b>MÜŞTERİ İLE ETKİLEŞİM ❌</b></li>
+        <li class="w3-padding-16"><b>KURUMSAL KİMLİK ❌</b></li>
+        <li class="w3-padding-16"><b>HEDEF KİTLE İLE ETKİLEŞİM ❌</b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA ❌</b></li>
+        <li class="w3-padding-16"><b>SEM ❌</b></li>  
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 400</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>Satın Al</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Premium Paket</p>
+        </li>
+        <li class="w3-padding-16"><b>İÇERİK TASARIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>İNSTAGRAM, TWİTTER, FACEBOOK ÇAPRAZ PAYLAŞIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>ÖZEL GÜN PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>AYLIK RAPORLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>HESAP ANALİZİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KRİZ YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>REKLAM YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÜNLÜK 2 POST VE 4 STORY PAYLAŞIMI &#x2705;</b></li>
+        <li class="w3-padding-16"><b>LOGO TASARIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>TELEFON VE E-POSTA DESTEĞİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KREATİF KAMPANYA ÜRETİMİ VE YÖNETİMİ &#x2705;</li>
+        <li class="w3-padding-16"><b>SEO &#x2705;</b></li>
+        <li class="w3-padding-16"><b>İTİBAR YÖNETİMİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>RAKİP ANALİZİ &#x2705;</b></li>
+        <li class="w3-padding-16"><b>WEB TASARIM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>MÜŞTERİ İLE ETKİLEŞİM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>KURUMSAL KİMLİK &#x2705;</b></li>
+        <li class="w3-padding-16"><b>HEDEF KİTLE İLE ETKİLEŞİM &#x2705;</b></li>
+        <li class="w3-padding-16"><b>GÖNDERİ PLANLAMA &#x2705;</b></li>
+        <li class="w3-padding-16"><b>SEM &#x2705;</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 500</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>Satın Al</button>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Selahattin Pınar Cad., No:10, Mecidiyeköy Mah., Şişli, İstanbul</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Mecidiyeköy,Istanbul</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  444 8 419</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  no1isdunya@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" onsubmit="return showMessage()" action="/action_page.php" target="_blank" id="myForm">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/birno1/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://x.com/MedyaSinyor?t=r4xpf9vxitdrCfLcmM1GlQ&s=08" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/sinyormedya?igsh=aG85b2x4MHB0OWR0" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/hedef-personel-078017299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">us</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+function showMessage() {
+    alert("Talebiniz alındı!");
+    resetForm();
+    return false; // Formun sayfaya gönderilmesini engeller
+  }
+
+  function resetForm() {
+    document.getElementById("myForm").reset();
+  }
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
